@@ -36,7 +36,7 @@ staging_events_table_create= ("""CREATE TABLE IF NOT EXISTS STAGING_EVENTS_TABLE
                                 location varchar,
                                 method varchar,
                                 page varchar,
-                                registration numeric,
+                                registration varchar,
                                 sessionid int,
                                 song varchar,
                                 status int,
@@ -70,7 +70,7 @@ staging_songs_table_create = ("""CREATE TABLE IF NOT EXISTS STAGING_SONGS_TABLE
 
 songplay_table_create = ("""CREATE TABLE IF NOT EXISTS SONGPLAY_TABLE 
                             (
-                                songplay_id int IDENTITY(0,1) NOT NULL,
+                                songplay_id int IDENTITY(0,1) PRIMARY KEY,
                                 start_time timestamp, 
                                 user_id int NOT NULL, 
                                 level varchar NOT NULL, 
@@ -78,8 +78,7 @@ songplay_table_create = ("""CREATE TABLE IF NOT EXISTS SONGPLAY_TABLE
                                 artist_id varchar, 
                                 session_id int, 
                                 location varchar,  
-                                user_agent varchar,
-                                PRIMARY KEY(start_time, user_id, session_id)
+                                user_agent varchar
                              )
 
                         """)
