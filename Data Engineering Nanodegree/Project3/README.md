@@ -2,7 +2,8 @@
 
 
 ## Project Description
-    The music streaming startup - Sparkify, with its growing user base and song database, needs to move thier processes and data onto the cloud.
+
+The music streaming startup - Sparkify, with its growing user base and song database, needs to move thier processes and data onto the cloud.
 
 
 ## Database schema design and ETL pipeline.
