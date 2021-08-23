@@ -4,7 +4,7 @@
 ## The music streaming startup - Sparkify, with its growing user base and song database, needs to move thier processes and data onto the cloud.
 
 
-##Database schema design and ETL pipeline.
+## Database schema design and ETL pipeline.
 
 Two staging tables are created - STAGING_EVENTS_TABLE and STAGING_SONGS_TABLE to load the complete raw data from the json files stored in the S3 bucket.
 Song data: s3://udacity-dend/song_data is loaded in to STAGING_SONGS_TABLE.
