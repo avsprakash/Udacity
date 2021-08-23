@@ -30,3 +30,19 @@ Points to consider while loading data into dimensional tables:
 ## Example queries and results for song play analysis - provided in the below word document 
 
 [Query Analysis.docx](https://github.com/avsprakash/Udacity/blob/9f8629f975731f969060f32dc7f25b6791901185/Data%20Engineering%20Nanodegree/Project3/Query%20Analysis.docx)
+
+
+### Running the python scripts
+
+- Run create_tables.py to create the staging and dimensional tables
+- Run etl.py to load the staging and dimensional tables
+
+### Files in the GIT repository
+
+- create_tables.py - python code to create staging and dimensional tables
+- dwh.cfg - configuration file to connect to Redshift database on aws
+- etl.py - pythin code for etl pipeline that loads the staging and dimensional tables
+- Query Analysis.docx - Some queries that have been run for analysis after loading the data and screenshots
+- README.md - This readme file 
+- songs_by_year.csv - Query results that group the songs by year
+- sql_queries.py - SQL queries for deleting, creating and loading staging and dimensional tables
