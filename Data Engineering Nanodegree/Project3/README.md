@@ -12,7 +12,8 @@ and data onto the cloud.
 Two staging tables are created - STAGING_EVENTS_TABLE and STAGING_SONGS_TABLE to load the complete raw data from the json 
 files stored in the S3 bucket.
 
-Song data: s3://udacity-dend/song_data is loaded in to STAGING_SONGS_TABLE.
+Song data: s3://udacity-dend/song_data is loaded in to STAGING_SONGS_TABLE.  
+
 Log data: s3://udacity-dend/log_data is loaded in to STAGING_EVENTS_TABLE
 
 This raw data is transformed and loaded in to dimensional tables (SONGPLAY_TABLE, USER_TABLE, SONG_TABLE, ARTIST_TABLE, TIME_TABLE). 
