@@ -149,6 +149,7 @@ songplay_table_insert = (""" INSERT INTO SONGPLAY_TABLE (start_time, user_id, le
                              JOIN STAGING_EVENTS_TABLE 
                              on STAGING_SONGS_TABLE.artist_name = STAGING_EVENTS_TABLE.artist
                              and STAGING_SONGS_TABLE.title = STAGING_EVENTS_TABLE.song
+                             and STAGING_SONGS_TABLE.duration = STAGING_EVENTS_TABLE.length
                              WHERE page=\'NextSong\'
 
 """)
