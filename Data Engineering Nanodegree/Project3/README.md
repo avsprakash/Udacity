@@ -1,7 +1,8 @@
 # Project 3 - Song Play Analysis for Sparkify
 
 
-## The music streaming startup - Sparkify, with its growing user base and song database, needs to move thier processes and data onto the cloud.
+## Project Description
+    The music streaming startup - Sparkify, with its growing user base and song database, needs to move thier processes and data onto the cloud.
 
 
 ## Database schema design and ETL pipeline.
@@ -20,6 +21,6 @@ Points to consider while loading data into dimensional tables:
 
 
 
-## Example queries and results for song play analysis - provided in the word document - 
+## Example queries and results for song play analysis - provided in the below word document 
 
 [Query Analysis.docx](https://github.com/avsprakash/Udacity/blob/9f8629f975731f969060f32dc7f25b6791901185/Data%20Engineering%20Nanodegree/Project3/Query%20Analysis.docx)
