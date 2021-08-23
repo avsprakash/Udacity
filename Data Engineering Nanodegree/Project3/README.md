@@ -16,13 +16,16 @@ Song data: s3://udacity-dend/song_data is loaded in to STAGING_SONGS_TABLE.
 
 Log data: s3://udacity-dend/log_data is loaded in to STAGING_EVENTS_TABLE
 
+Points to to consider when loading into staging tables (STAGING_EVENTS_TABLE and STAGING_SONGS_TABLE)  
+- Use the same column names as those in the data files, so that we can use "json auto" to load the data easily
+
 This raw data is transformed and loaded in to dimensional tables (SONGPLAY_TABLE, USER_TABLE, SONG_TABLE, ARTIST_TABLE, TIME_TABLE). 
 Points to consider while loading data into dimensional tables:
 
 - Use distinct to avoid inserting duplicate rows (used fo USER_TABLE, SONG_TABLE and ARTIST_TABLE).
 - load only page='NextSong'.
 - Use 'IDENTITY' to autogenerate column values (used while creating SONGPLAY_TABLE).
-- Use the same column names as those in the data files, so that we can use "json auto" to load the data easily
+
 
 
 
